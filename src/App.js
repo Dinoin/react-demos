@@ -1,7 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 
-import ShowCase from './pages/ShowCase';
-import Page404 from './pages/Page404';
+import ShowCase from 'pages/ShowCase';
+import Page404 from 'pages/Page404';
 
 import logo from './logo.svg';
 import './App.css';
