@@ -1,0 +1,22 @@
+.page-background {
+  font-family: sans-serif;
+  text-align: center;
+  /* background-image: url("https://drive.google.com/uc?export=sharing&id=1klTaEeOJwmz9X-zHN95HAdDQI_xrQ5WX"); */
+  background-image: url("assets/images/BookWell.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.flip-background {
+  margin: auto;
+  width: 100vw;
+  height: 80vh;
+  /* background-image: url("https://drive.google.com/uc?export=sharing&id=13MCW50nBhL_PqpOfZiUzfF29t9lVNizW"); */
+  background-image: url("assets/images/OpenBook.png");
+  background-size: contain; /* 保持圖片比例不變，並讓圖片完全顯示在容器內 */
+  background-repeat: no-repeat; /* 防止背景圖片重複 */
+  background-position: center; /* 將背景圖片置中 */
+  display: flex;
+}
