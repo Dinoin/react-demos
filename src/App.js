@@ -1,13 +1,13 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 
-import ShowCase from 'pages/ShowCase';
-import Page404 from 'pages/Page404';
+import ShowCase from "pages/ShowCase";
+import Page404 from "pages/Page404";
 
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
-function Home(props){
-  return(
+function Home(props) {
+  return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

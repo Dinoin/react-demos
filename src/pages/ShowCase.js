@@ -58,7 +58,13 @@ export default function ShowCase() {
               <article key={`page_${i}`}>
                 <h1>{v.title}</h1>
                 {v.directions ? <p>{v.directions}</p> : ""}
-                <a href={v.url} target="_blank" rel="noopener noreferrer" alt="go" style={{ overflowY: "hidden" }}>
+                <a
+                  href={v.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  alt="go"
+                  style={{ overflowY: "hidden" }}
+                >
                   {/* GO➢ */}
                   <img src={v.img} style={{ width: "100%" }} alt="" />
                 </a>
