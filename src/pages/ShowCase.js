@@ -47,7 +47,7 @@ export default function ShowCase() {
           uncutPages // 開啟此選項以顯示未分割的頁面，模擬書本的翻頁效果
           height={flipPageHeight}
           width={flipPageWidth}
-          style={{ margin: "auto" }}
+          style={{ margin: "auto", display: "flex" }}
         >
           <article>
             <h1>Show Cases</h1>
@@ -55,18 +55,26 @@ export default function ShowCase() {
           </article>
           {config.map((v, i) => {
             return (
-              <article key={`page_${i}`}>
+              <article
+                key={`page_${i}`}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  height: "100%",
+                }}
+              >
                 <h1>{v.title}</h1>
                 {v.directions ? <p>{v.directions}</p> : ""}
+                <div style={{ overflowY: "hidden", flex: "1" }}>
+                  <img src={v.img} style={{ width: "100%" }} alt="" />
+                </div>
                 <a
                   href={v.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   alt="go"
-                  style={{ overflowY: "hidden" }}
                 >
-                  {/* GO➢ */}
-                  <img src={v.img} style={{ width: "100%" }} alt="" />
+                  GO➢
                 </a>
               </article>
             );
