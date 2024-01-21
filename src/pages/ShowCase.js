@@ -12,7 +12,7 @@ export default function ShowCase() {
   const ref_FlipBackground = useRef();
 
   const switch_cases = ["翻頁效果", "清單"];
-  const [switch_case, setSwitch_case] = useState(switch_cases[1]);
+  const [switch_case, setSwitch_case] = useState(switch_cases[0]);
 
   useEffect(() => {
     console.log(switch_case);
