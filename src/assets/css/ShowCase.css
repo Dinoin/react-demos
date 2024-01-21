@@ -20,3 +20,9 @@
   background-position: center; /* 將背景圖片置中 */
   display: flex;
 }
+
+.paper-background {
+  margin: auto;
+  width: 80vw;
+  height: 85vh;
+}
