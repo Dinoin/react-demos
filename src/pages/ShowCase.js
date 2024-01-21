@@ -105,10 +105,10 @@ export default function ShowCase() {
             <Grid container spacing={2} sx={{ p: 1 }}>
               {config.map((v, i) => {
                 return (
-                  <Grid xs={6} key={`page_${i}`} sx={{ p: 1 }}>
+                  <Grid xs={12} sm={6} key={`page_${i}`} sx={{ p: 1 }}>
                     <Box>
                       <Typography
-                        variant="h4"
+                        variant="h5"
                         gutterBottom
                         sx={{ border: "1px solid grey", marginBottom: 0 }}
                       >
