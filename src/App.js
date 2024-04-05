@@ -12,6 +12,7 @@ function Home(props) {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Dinoin say HI!</p>
+        <p>This is the showcase list page. Please click the link to go to it.</p>
         <a
           className="App-link"
           href="/#/ShowCase"
